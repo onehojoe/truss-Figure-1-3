@@ -1,0 +1,3169 @@
+{
+  "Uuid": "89ee06c1-add4-4ed9-bb33-59da25faa3db",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "truss Figure 1 gd",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "b2d1808c0b23429eab0b933c2dda04d3",
+      "Name": "Integer Slider",
+      "Type": "number",
+      "Type2": "number",
+      "Value": "83",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 1.0,
+      "NumberType": "Integer",
+      "Description": "정수 값을 생성하는 슬라이더.",
+      "SelectedIndex": 0
+    }
+  ],
+  "Outputs": [
+    {
+      "Id": "3249f731b6c94eba8358941a8f0fca83",
+      "Name": "점수",
+      "Type": "float",
+      "InitialValue": "3.63636363636364",
+      "Description": "리스트에서 첫 번째 항목을 반환합니다.\n\nList.FirstItem (list: var[]..[]): var[]..[]"
+    }
+  ],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "3df619e87f8145359f1cb45fc6afd157",
+      "Inputs": [
+        {
+          "Id": "6680ffcfe99a4ab19a4fa5f7ece28b41",
+          "Name": "x",
+          "Description": "X 좌표\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "35939035b6124a468fe0246e41d3d51e",
+          "Name": "y",
+          "Description": "Y 좌표\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "78536134eafb46eb9341f4025aabc4ec",
+          "Name": "z",
+          "Description": "Z 좌표\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d613e39034fd4509be09e2f47c47ab29",
+          "Name": "Point",
+          "Description": "좌표로 작성된 점",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 3개의 데카르트 좌표를 사용하여 점을 형성합니다\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "33a62b045ffc48e19186cc4bf29591f8",
+      "Inputs": [
+        {
+          "Id": "9049a6e6492a442eae935c537b343507",
+          "Name": "x",
+          "Description": "X 좌표\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "be9a0288c2fc49158ae17491f4d45d71",
+          "Name": "y",
+          "Description": "Y 좌표\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "22fb4705deeb461c9475700a6e1c6725",
+          "Name": "z",
+          "Description": "Z 좌표\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b8439dab9d38473095b442903e8b07c0",
+          "Name": "Point",
+          "Description": "좌표로 작성된 점",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 3개의 데카르트 좌표를 사용하여 점을 형성합니다\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1000;",
+      "Id": "209ccce3468240108ac3edc7f5a1b278",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e29a47b3e2704a1daa97127141b72b8e",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Line.ByStartPointEndPoint@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point",
+      "Id": "af2653a2baf8491ead78fbda6746ff69",
+      "Inputs": [
+        {
+          "Id": "04479c589b204f839faf0780051d9035",
+          "Name": "startPoint",
+          "Description": "선 시작점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f1f9dc7f6c104faea65d555ca1034790",
+          "Name": "endPoint",
+          "Description": "선 끝점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "304873ac4d9a4b74ad122f011bea947f",
+          "Name": "Line",
+          "Description": "시작점과 끝점에서의 선",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "두 입력 점 사이에 직선을 만듭니다.\n\nLine.ByStartPointEndPoint (startPoint: Point, endPoint: Point): Line"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Curve.PointAtParameter@double",
+      "Id": "d28cf3103b204cdc9216fb1142a36512",
+      "Inputs": [
+        {
+          "Id": "6f3f7df08b5141fab61f7c60511ffaa5",
+          "Name": "curve",
+          "Description": "Autodesk.DesignScript.Geometry.Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "90611c5da3f94252b66468c1e3fede79",
+          "Name": "param",
+          "Description": "매개변수 평가 위치\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1944bbd52a7247028c8256bb31968b2d",
+          "Name": "Point",
+          "Description": "점",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "StartParameter() 및 EndParameter() 사이의 지정된 매개변수에서 곡선상의 점을 가져옵니다\n\nCurve.PointAtParameter (param: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0..1..0.2;",
+      "Id": "782ec63833e446de8edf3bd3f76a792f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6e65ad6f127f400299d792c0c348f219",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Geometry.Translate@double,double,double",
+      "Id": "18e2bb6328a74225b32133b71b52baf4",
+      "Inputs": [
+        {
+          "Id": "0b059c9ed8cd4373822ce328eaf7c599",
+          "Name": "geometry",
+          "Description": "Autodesk.DesignScript.Geometry.Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "417a571d1b9d42edb1e317543dbbdc0e",
+          "Name": "xTranslation",
+          "Description": "X축 변위.\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9a823a38d7604bf9b041779eb97b6181",
+          "Name": "yTranslation",
+          "Description": "Y축 변위.\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b341558e144448b79c92576254b886bc",
+          "Name": "zTranslation",
+          "Description": "Z축 변위.\n\ndouble\n기본값 : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "36dc8d3645a04a8b93c81879051fc275",
+          "Name": "Geometry",
+          "Description": "변환된 형상.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 형상을 각각 WCS에 정의된 x, y, z 방향으로 지정된 변위만큼 변환합니다.\n\nGeometry.Translate (xTranslation: double = 0, yTranslation: double = 0, zTranslation: double = 0): Geometry"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0..200..50;",
+      "Id": "a03f30ea5e7d473db6b685a19603e3b9",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2e23a246d20b4e68a5dd14187891d510",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.OfRepeatedItem@var[]..[],int",
+      "Id": "2ef41ec2268c4c69a9025df82250c840",
+      "Inputs": [
+        {
+          "Id": "0348dd7d7a3d4f12a6a8ab2fb144e7aa",
+          "Name": "item",
+          "Description": "반복할 항목.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2e0db4f877424d888f3c617503987d13",
+          "Name": "amount",
+          "Description": "반복할 횟수.\n\nint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "128f6cf57bd34125bf7cad9ed62fbd77",
+          "Name": "list",
+          "Description": "반복된 항목의 리스트.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 항목이 지정된 횟수만큼 포함된 리스트를 만듭니다.\n\nList.OfRepeatedItem (item: var[]..[], amount: int): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "20;",
+      "Id": "d03e60247c2941a99a8ca0890462534a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b1d4bba51d874370af5a7a9c0f9e946f",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Shuffle@var[]..[],int",
+      "Id": "37c9a25d5ae349a6b81c1b9588bca133",
+      "Inputs": [
+        {
+          "Id": "f0f789f75f4f471db4dad1861550db01",
+          "Name": "list",
+          "Description": "항목을 섞을 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1885f6c46dfc422a89a60afef73784c2",
+          "Name": "seed",
+          "Description": "난수 생성기의 시드 값\n\nint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f610e2c3cfa24a02b96aedac2628f61b",
+          "Name": "list",
+          "Description": "항목을 무작위로 섞은 리스트.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "리스트 항목을 섞어 초기 시드 값을 기준으로 항목의 순서를 무작위로 지정합니다.\n\nList.Shuffle (list: var[]..[], seed: int): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Flatten@var[]..[],int",
+      "Id": "447c3cae848c4ac38b21f75f04fc098c",
+      "Inputs": [
+        {
+          "Id": "2f26cb96f57c471598b867fba40f06a1",
+          "Name": "list",
+          "Description": "단순화할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e65e032d904542d2b913d797a81b0959",
+          "Name": "amount",
+          "Description": "제거할 리스트 내포 레이어(-1은 모든 리스트 내포 제거)\n\nint\n기본값 : -1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a1df25b689f044ec83cf5e7234de2c4e",
+          "Name": "list",
+          "Description": "양 기준으로 단순화한 리스트",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "리스트의 내포된 리스트를 특정한 양만큼 단순화합니다.\n\nList.Flatten (list: var[]..[], amount: int = -1): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Integer",
+      "InputValue": 83,
+      "MaximumValue": 100,
+      "MinimumValue": 0,
+      "StepValue": 1,
+      "Id": "b2d1808c0b23429eab0b933c2dda04d3",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "01222ecf83074745a18de4694770be5f",
+          "Name": "",
+          "Description": "Int64",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "정수 값을 생성하는 슬라이더."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Line.ByStartPointEndPoint@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point",
+      "Id": "828118c4f738435c8dcfd22c5cdbe7cc",
+      "Inputs": [
+        {
+          "Id": "9c5b74087c3440109b8fa35d291cec63",
+          "Name": "startPoint",
+          "Description": "선 시작점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9e359cbe65104795ad7cdf409a035a52",
+          "Name": "endPoint",
+          "Description": "선 끝점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "904a4c0cff7c4a04a0506aa110bfaf47",
+          "Name": "Line",
+          "Description": "시작점과 끝점에서의 선",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "두 입력 점 사이에 직선을 만듭니다.\n\nLine.ByStartPointEndPoint (startPoint: Point, endPoint: Point): Line"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Line.ByStartPointEndPoint@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point",
+      "Id": "9f90b4d4ce8d45ac943bc8cf2f12af4c",
+      "Inputs": [
+        {
+          "Id": "aaf9ee6e7e1c4aa9a1871a579ea77648",
+          "Name": "startPoint",
+          "Description": "선 시작점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "55f3578521ba426dacc2a7163e602e32",
+          "Name": "endPoint",
+          "Description": "선 끝점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ff0220fff26a4fd6b6014ffaea302b80",
+          "Name": "Line",
+          "Description": "시작점과 끝점에서의 선",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "두 입력 점 사이에 직선을 만듭니다.\n\nLine.ByStartPointEndPoint (startPoint: Point, endPoint: Point): Line"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.DropItems@var[]..[],int",
+      "Id": "b52d863ecab244e3b841150a4c29544d",
+      "Inputs": [
+        {
+          "Id": "bc4eb9df98e148048270bf906f4e634b",
+          "Name": "list",
+          "Description": "항목을 제거할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f8ba1a8eccc94ed09783abf1b7a5c7a8",
+          "Name": "amount",
+          "Description": "제거할 항목의 수. 음수인 경우 리스트의 끝에서 항목이 제거됩니다.\n\nint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "945a34f0533a4df88e69b6812f4aac4f",
+          "Name": "list",
+          "Description": "나머지 항목의 리스트.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "리스트의 시작 부분에서 일정한 양의 항목을 제거합니다. 양이 음수 값이면, 리스트의 끝 부분에서 항목이 제거됩니다.\n\nList.DropItems (list: var[]..[], amount: int): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1;",
+      "Id": "761703922c9940b696428fbcf58d40d2",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9591f4c5d61b4285a2131ac08aa71cc4",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Line.ByStartPointEndPoint@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point",
+      "Id": "8c9fe52c68054fea86bd324f8c889d74",
+      "Inputs": [
+        {
+          "Id": "5865bcad41b14623baee2a5fd4ab4d9b",
+          "Name": "startPoint",
+          "Description": "선 시작점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1dda60ed13264fcab9408135c0cdb22a",
+          "Name": "endPoint",
+          "Description": "선 끝점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "99d8536f8e604e54b9f0c401bdf98c72",
+          "Name": "Line",
+          "Description": "시작점과 끝점에서의 선",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "두 입력 점 사이에 직선을 만듭니다.\n\nLine.ByStartPointEndPoint (startPoint: Point, endPoint: Point): Line"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Line.ByStartPointEndPoint@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point",
+      "Id": "3481fbb7af724c9dbbde095b08b279fd",
+      "Inputs": [
+        {
+          "Id": "f7c79c2938ca4655a0c0834cc66090ee",
+          "Name": "startPoint",
+          "Description": "선 시작점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ce022c2e6aca4559b8f3d320117054a0",
+          "Name": "endPoint",
+          "Description": "선 끝점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "cceda1e1136e49f79b45a9896493ad5e",
+          "Name": "Line",
+          "Description": "시작점과 끝점에서의 선",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "두 입력 점 사이에 직선을 만듭니다.\n\nLine.ByStartPointEndPoint (startPoint: Point, endPoint: Point): Line"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.DropItems@var[]..[],int",
+      "Id": "62dcc7d726cf41b2a03eafcce077cbdd",
+      "Inputs": [
+        {
+          "Id": "0f6a1df7730142fb919eb36e3cccf88b",
+          "Name": "list",
+          "Description": "항목을 제거할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b0b033831c9a45ba97f94da1d3c01903",
+          "Name": "amount",
+          "Description": "제거할 항목의 수. 음수인 경우 리스트의 끝에서 항목이 제거됩니다.\n\nint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4ab1e3c60cf84b569e827df9478557b0",
+          "Name": "list",
+          "Description": "나머지 항목의 리스트.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "리스트의 시작 부분에서 일정한 양의 항목을 제거합니다. 양이 음수 값이면, 리스트의 끝 부분에서 항목이 제거됩니다.\n\nList.DropItems (list: var[]..[], amount: int): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "-1;",
+      "Id": "b761675c72914a5b956dce0652588c7a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "beb041b68c824229a9ac1c94f82c1ee9",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.DropItems@var[]..[],int",
+      "Id": "9536b7ece3e5409ea42831e10580d0b5",
+      "Inputs": [
+        {
+          "Id": "fd27b7c4dd1744b8bed93e028880d922",
+          "Name": "list",
+          "Description": "항목을 제거할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c465c6191b16434bba26d1e479591688",
+          "Name": "amount",
+          "Description": "제거할 항목의 수. 음수인 경우 리스트의 끝에서 항목이 제거됩니다.\n\nint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "67730bac0d224b8a80a76a9f07f77232",
+          "Name": "list",
+          "Description": "나머지 항목의 리스트.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "리스트의 시작 부분에서 일정한 양의 항목을 제거합니다. 양이 음수 값이면, 리스트의 끝 부분에서 항목이 제거됩니다.\n\nList.DropItems (list: var[]..[], amount: int): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "61930a0c93414305a94f57a0cc313c00",
+      "Inputs": [
+        {
+          "Id": "688af60bcb8f42a19801753ea0c67bb9",
+          "Name": "item0",
+          "Description": "항목 인덱스 #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4806692a57444f4086081aed6b41c744",
+          "Name": "item1",
+          "Description": "항목 Index 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "84654605fd5d472cadf6e6ef2e401236",
+          "Name": "item2",
+          "Description": "항목 Index 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a96c433d086d4e19ba27fd8d73baf25e",
+          "Name": "item3",
+          "Description": "항목 Index 3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c24d4dd71f304dfa8e0291ddae1b85ce",
+          "Name": "list",
+          "Description": "리스트(유형: var[]..[])",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "지정된 입력에서 새 리스트를 만듭니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Flatten@var[]..[],int",
+      "Id": "af09b385c44a43fe96442f9c33334fea",
+      "Inputs": [
+        {
+          "Id": "8cd1e2cbab3c48b29d04cadd534e5c20",
+          "Name": "list",
+          "Description": "단순화할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e1b253a0024945b19a4bee163ae52f2b",
+          "Name": "amount",
+          "Description": "제거할 리스트 내포 레이어(-1은 모든 리스트 내포 제거)\n\nint\n기본값 : -1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5626bb86ebf749d5ab864c972ad8c096",
+          "Name": "list",
+          "Description": "양 기준으로 단순화한 리스트",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "리스트의 내포된 리스트를 특정한 양만큼 단순화합니다.\n\nList.Flatten (list: var[]..[], amount: int = -1): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Curve.StartPoint",
+      "Id": "871a75c9e3bc4df9ae2a9a04fee087b4",
+      "Inputs": [
+        {
+          "Id": "5807df86c932416baf5ca9e5879c029b",
+          "Name": "curve",
+          "Description": "Autodesk.DesignScript.Geometry.Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e7a8f40b45e84306960c19c93c8f5ce9",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "곡선을 따라 시작점을 가져옵니다\n\nCurve.StartPoint: Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Curve.EndPoint",
+      "Id": "cbaddacc4c684db8835a1019ae5eb347",
+      "Inputs": [
+        {
+          "Id": "905420c54d5d495f8ddf21c10413db2a",
+          "Name": "curve",
+          "Description": "Autodesk.DesignScript.Geometry.Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "cc917b7016d94b719c0455aff548c98f",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "곡선을 따라 끝점을 가져옵니다\n\nCurve.EndPoint: Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction, DynamoCore",
+      "FunctionSignature": "DSCore.List.Join@var[]..[]",
+      "FunctionType": "VariableArgument",
+      "NodeType": "FunctionNode",
+      "Id": "f2558d0d528444bda148b89520d9b8a6",
+      "Inputs": [
+        {
+          "Id": "3827f378375e43dc9c3a862d5734790c",
+          "Name": "list0",
+          "Description": "하나로 결합할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "60b1d7fa094347d688315743c31f8aa9",
+          "Name": "list1",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c00b2adc84f245c78f7414d737a1afb9",
+          "Name": "list",
+          "Description": "결합된 리스트.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "지정된 모든 리스트를 단일 리스트로 연결합니다.\n\nList.Join (lists: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.UniqueItems@var[]..[]",
+      "Id": "22b6b43fbdac447c8da3ae512a4ff788",
+      "Inputs": [
+        {
+          "Id": "e0a67dd4552f4dd6b4411cc79b175cf0",
+          "Name": "list",
+          "Description": "중복 항목을 필터링할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "fb71dae2892f447884b0e950f40161c2",
+          "Name": "list",
+          "Description": "필터링된 리스트.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 리스트의 고유한 항목이 모두 포함된 새 리스트를 만듭니다.\n\nList.UniqueItems (list: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Clean@var[]..[],bool",
+      "Id": "9c5b48c175ce41179866f23e6db9faa3",
+      "Inputs": [
+        {
+          "Id": "d247d45a7cee4d6b8fdff5a914f19d95",
+          "Name": "list",
+          "Description": "정리할 null 및 빈 하위 리스트가 포함된 리스트\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ddd6b9f91fa94d9b8ebef7d88835ac73",
+          "Name": "preserveIndices",
+          "Description": "후행이 아닌 null이 필터링되지 않을 수 있도록\n\nbool\n기본값 : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1dc2c540db3547edbafb5bbee3d24c13",
+          "Name": "list",
+          "Description": "행과 열을 바꾼 리스트의 리스트",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 임의 치수의 리스트에서 null 및 빈 리스트의 데이터를 정리합니다.\n\nList.Clean (list: var[]..[], preserveIndices: bool = true): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "800701b904e24487a17355526f8f15ea",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "67473206bd9948afbe00cbc7d13638b1",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "True와 False 사이에서 선택."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.FilterByBoolMask@var[]..[],var[]..[]",
+      "Id": "b2d9fca8b3b04374b7881c363fabc832",
+      "Inputs": [
+        {
+          "Id": "7c9ab879c3f8482bbea659ab9d4024dd",
+          "Name": "list",
+          "Description": "필터링할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f99513ee32fd4efe864de3a02bf8ec5b",
+          "Name": "mask",
+          "Description": "마스크를 나타내는 부울 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": true,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ba408ead85834ebea6c0d95f26900998",
+          "Name": "in",
+          "Description": "마스크 인덱스가 true인 항목.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "06aa75e20af2412e9ef1cfc64da6b264",
+          "Name": "out",
+          "Description": "마스크 인덱스가 false인 항목.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "별도의 부울 리스트에서 해당하는 인덱스를 조회하여 시퀀스를 필터링합니다.\n\nList.FilterByBoolMask (list: var[]..[], mask: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "db8b375f2def4320a14108b9ef7b659a",
+      "Inputs": [
+        {
+          "Id": "0bbdbb7dadda46a7b9cbcfab49697090",
+          "Name": "",
+          "Description": "출력을 표시할 노드",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5017f0e21ff8493196cc01b4a9877637",
+          "Name": "",
+          "Description": "노드 출력",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "노드의 출력 시각화"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Sphere.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double",
+      "Id": "bea2381f27394bd9984d3826d9594ef7",
+      "Inputs": [
+        {
+          "Id": "271baf6dd27047ee97968441557e7599",
+          "Name": "centerPoint",
+          "Description": "Point\n기본값 : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6288568277c04e82b939e4b1210cc563",
+          "Name": "radius",
+          "Description": "double\n기본값 : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "711a8525e99342d98082d4c316c1c75f",
+          "Name": "Sphere",
+          "Description": "Sphere",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "입력 점을 중심으로 지정된 반지름을 사용하여 솔리드 구를 만듭니다.\n\nSphere.ByCenterPointRadius (centerPoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), radius: double = 1): Sphere"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "10;",
+      "Id": "82b75b3fdcdf47aa88cebd9b1298959d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5bd8d2114ddf4ac4b05627a1bbfa2c58",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.BoundingBox.ByGeometry@Autodesk.DesignScript.Geometry.Geometry[]",
+      "Id": "753876559e2842f1a846cab396f81155",
+      "Inputs": [
+        {
+          "Id": "9f6062bba2514a7da7ee64bd6dd2b0c2",
+          "Name": "geom",
+          "Description": "Geometry[]",
+          "UsingDefaultValue": false,
+          "Level": 1,
+          "UseLevels": true,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b268faff2bf74540a6a706863d76a121",
+          "Name": "BoundingBox",
+          "Description": "BoundingBox",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "입력 형상 주위로 축에 정렬되는 BoundingBox를 만듭니다.\n\nBoundingBox.ByGeometry (geom: Geometry[]): BoundingBox"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.BoundingBox.Contains@Autodesk.DesignScript.Geometry.Point",
+      "Id": "cbeb82bb8f844c2f8539c2f97b9052e0",
+      "Inputs": [
+        {
+          "Id": "49a3dcffc5a94af489645632652fc919",
+          "Name": "boundingBox",
+          "Description": "Autodesk.DesignScript.Geometry.BoundingBox",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1e7a5ef915424dfbadcca1efcc307263",
+          "Name": "point",
+          "Description": "테스트 점\n\nPoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "458181d8e3bd442f856cc624af695a00",
+          "Name": "bool",
+          "Description": "점이 내부에 있는 경우 True, 그렇지 않은 경우 False",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "점이 경계 상자 안에 있는지 확인합니다.\n\nBoundingBox.Contains (point: Point): bool"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Modifiers.GeometryColor.ByGeometryColor@Autodesk.DesignScript.Geometry.Geometry,DSCore.Color",
+      "Id": "02ae8ef75ad7453ab448fe7a8e75cc22",
+      "Inputs": [
+        {
+          "Id": "36ee92bb57b84ba2a0f2f80c78b1bf96",
+          "Name": "geometry",
+          "Description": "색상을 적용하려는 형상입니다.\n\nGeometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "632ee838d2be4821b1994e1134147c78",
+          "Name": "color",
+          "Description": "해당 색상입니다.\n\nColor",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "36370bed4fcb4bbf85363f5506c87ca8",
+          "Name": "GeometryColor",
+          "Description": "화면표시 객체입니다.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "색상을 사용하여 형상을 표시합니다.\n\nGeometryColor.ByGeometryColor (geometry: Geometry, color: Color): GeometryColor"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "bc5f969252dd4d5093d66643d63102d3",
+      "Inputs": [
+        {
+          "Id": "f594cd427d5a4aeca5b08ca4af5be7f6",
+          "Name": "list",
+          "Description": "항목 수를 가져올 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": true,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3f667702290d4191a6704f840c1f4065",
+          "Name": "int",
+          "Description": "리스트 길이.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 리스트에 저장된 항목의 개수를 반환합니다.\n\nList.Count (list: var[]..[]): int"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DesignScript.Builtin.Dictionary.ByKeysValues@string[],var[]..[]",
+      "Id": "acfec99948964d65999de6d447e401df",
+      "Inputs": [
+        {
+          "Id": "8072e00c9fd24e9c91236bc1c55e507b",
+          "Name": "keys",
+          "Description": "사전의 키\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "30cfeb6addd94aa9857694e211c43f2f",
+          "Name": "values",
+          "Description": "사전의 값\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2f0ca3a61b0845c784942ddf1fc22988",
+          "Name": "dictionary",
+          "Description": "키 및 값의 사전",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "제공된 키 및 값을 포함하는 사전을 생성합니다. 항목 수는 키 또는 값보다 적습니다.\n\nDictionary.ByKeysValues (keys: string[], values: var[]..[]): Dictionary"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1..7;",
+      "Id": "fef7627341cc471691b9305b5e35a7ac",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "47a62d31f95140ff8f03959e5eb8abfe",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 192,
+        "G": 192,
+        "B": 192,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "1d0f28ffc6894ba38e2ab1386b5164f1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "847074315306437e9e0688538d331b23",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "팔레트에서 색상 선택"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 222,
+        "G": 184,
+        "B": 135,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "ecb743e6f3bd450ab7492976aab885f7",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9c8938fc25394f85aba2584bebce818e",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "팔레트에서 색상 선택"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 218,
+        "G": 165,
+        "B": 32,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "eaeeeb6ca38447eca3d6b72e70dfbdd6",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "126f41f549b64e8c8b3c90066aafc640",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "팔레트에서 색상 선택"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 250,
+        "G": 128,
+        "B": 114,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "548a6a917cbe47919d51ce52f698cf0d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6a44e5b2460b41a597eeecc257604f1d",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "팔레트에서 색상 선택"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 255,
+        "G": 0,
+        "B": 0,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "1a924b21de404c89ab499f594d0366a5",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "21cfb10d656f4d24921b317c5351772d",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "팔레트에서 색상 선택"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 255,
+        "G": 215,
+        "B": 0,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "db939fd1c4d047b5b9de9bc2660196ef",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2434c4a75b94473899361b94424a2738",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "팔레트에서 색상 선택"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 255,
+        "G": 69,
+        "B": 0,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "c5143a89eff14ba8a17d700879563494",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8c72e2e06b204085bc505def55162d2c",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "팔레트에서 색상 선택"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction, DynamoCore",
+      "FunctionSignature": "DSCore.List.Join@var[]..[]",
+      "FunctionType": "VariableArgument",
+      "NodeType": "FunctionNode",
+      "Id": "efcaa2cc4e974fec8152de0994892826",
+      "Inputs": [
+        {
+          "Id": "15bf8916bcbd44fea4e34e6f61911621",
+          "Name": "list0",
+          "Description": "하나로 결합할 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8207f90115c642ca9f690ba5567e6954",
+          "Name": "list1",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4edfd08dc8db494bb761a80628557187",
+          "Name": "list2",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0d9665b8e4584404b4ddc7a40ac3ff92",
+          "Name": "list3",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5dfdc81bcbf34c069e59151530543974",
+          "Name": "list4",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f54242fdbd584858a9b2b1267ace4cfe",
+          "Name": "list5",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7ba62d457ebf4953bfe544308784191f",
+          "Name": "list6",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b58610a4dd5546428647c440dd364489",
+          "Name": "list",
+          "Description": "결합된 리스트.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "지정된 모든 리스트를 단일 리스트로 연결합니다.\n\nList.Join (lists: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.FromObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "7b9ffc743e2b4bb6b36977a430261df2",
+      "Inputs": [
+        {
+          "Id": "33058c5b1d0e49eeb43e0f33c818a47a",
+          "Name": "object",
+          "Description": "직렬화할 객체",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d66c15d9d453438a89405e13cca0728a",
+          "Name": "string",
+          "Description": "객체의 문자열 표현",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "객체를 문자열 표현으로 변환합니다."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.FromObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "2b7c4e3ad9684d61b33c2c2e1685fd82",
+      "Inputs": [
+        {
+          "Id": "f4a1354371084d4bae0b92c3ad6dc374",
+          "Name": "object",
+          "Description": "직렬화할 객체",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d48f95698a96459bb5ce6d36d548149d",
+          "Name": "string",
+          "Description": "객체의 문자열 표현",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "객체를 문자열 표현으로 변환합니다."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DesignScript.Builtin.Dictionary.ValueAtKey@string",
+      "Id": "4b92efb420db45e69443a50b36e615a4",
+      "Inputs": [
+        {
+          "Id": "6e30cbb2d728417e9d7096966ace5534",
+          "Name": "dictionary",
+          "Description": "DesignScript.Builtin.Dictionary",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4e66a495f7d1448a802135e9415619b2",
+          "Name": "key",
+          "Description": "값을 가져올 사전의 키\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "27f561b1a6034489862c52b40506c5dc",
+          "Name": "value",
+          "Description": "지정된 키의 값이거나 설정되지 않은 경우 null",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 키의 값 가져오기\n\nDictionary.ValueAtKey (key: string): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "94246e4369e14b099e637164ae0f1ac6",
+      "Inputs": [
+        {
+          "Id": "1d0f8f36acee43c7860529bef9f2b8b4",
+          "Name": "list",
+          "Description": "항목 수를 가져올 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ca2bd48363d34d5e956de19e4abf5ec9",
+          "Name": "int",
+          "Description": "리스트 길이.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "지정된 리스트에 저장된 항목의 개수를 반환합니다.\n\nList.Count (list: var[]..[]): int"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.Math.Sum@double[]",
+      "Id": "27d1da9ec6d84934b3740635ef55c2fc",
+      "Inputs": [
+        {
+          "Id": "9d60b9adef634318bc8901e0d7f7bd86",
+          "Name": "values",
+          "Description": "합계를 더할 숫자\n\ndouble[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ae38e24dd0ac4163b92c6f681fdc0887",
+          "Name": "double",
+          "Description": "값의 합계",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "숫자의 합계를 계산합니다\n\nMath.Sum (values: double[]): double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "a/b;",
+      "Id": "5a71527e67f04517b124d2bfd70b7212",
+      "Inputs": [
+        {
+          "Id": "21f0546329784683a89ffdbec9f1602a",
+          "Name": "a",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "12aea648646046368dc23f466b8551e1",
+          "Name": "b",
+          "Description": "b",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b8e1d2999a834ca29bb4577928cfd351",
+          "Name": "",
+          "Description": "선 1의 표현식 값",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "DesignScript 코드를 직접 작성할 수 있습니다"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.FirstItem@var[]..[]",
+      "Id": "3249f731b6c94eba8358941a8f0fca83",
+      "Inputs": [
+        {
+          "Id": "540f52ca0ce04a4297f6b6cf779193ab",
+          "Name": "list",
+          "Description": "첫 번째 항목을 가져올 리스트.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1d30743b0ec846b2afe270e502663d44",
+          "Name": "item",
+          "Description": "리스트의 첫 번째 항목.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "리스트에서 첫 번째 항목을 반환합니다.\n\nList.FirstItem (list: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "6249ae0306fa4ac0893821c6bd972d21",
+      "Inputs": [
+        {
+          "Id": "879cd40fde4d4ac1acf76b64aada2373",
+          "Name": "",
+          "Description": "Node to show output from",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "98a7168860d141d69288bc9c981ed53b",
+          "Name": "",
+          "Description": "Node output",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "노드의 출력 시각화"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "d613e39034fd4509be09e2f47c47ab29",
+      "End": "04479c589b204f839faf0780051d9035",
+      "Id": "d78e4dbd955944c58dd50626c756297d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b8439dab9d38473095b442903e8b07c0",
+      "End": "f1f9dc7f6c104faea65d555ca1034790",
+      "Id": "05d4f1fe94254d2f8322eae114bc1fdb",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "e29a47b3e2704a1daa97127141b72b8e",
+      "End": "9049a6e6492a442eae935c537b343507",
+      "Id": "7298663c50b548d6b073d0b9e11d453f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "304873ac4d9a4b74ad122f011bea947f",
+      "End": "6f3f7df08b5141fab61f7c60511ffaa5",
+      "Id": "a193dd9b81d54cd2a62dc61512b36646",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1944bbd52a7247028c8256bb31968b2d",
+      "End": "0b059c9ed8cd4373822ce328eaf7c599",
+      "Id": "96d14391ac5f41449eea32fc74308d34",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1944bbd52a7247028c8256bb31968b2d",
+      "End": "9c5b74087c3440109b8fa35d291cec63",
+      "Id": "da72658959e34d9a8b34d1314c8859c9",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1944bbd52a7247028c8256bb31968b2d",
+      "End": "aaf9ee6e7e1c4aa9a1871a579ea77648",
+      "Id": "01c9fe59d87444e2bbcc7656e01fe271",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1944bbd52a7247028c8256bb31968b2d",
+      "End": "fd27b7c4dd1744b8bed93e028880d922",
+      "Id": "a0405538bafe4ddc90614a24065476e3",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6e65ad6f127f400299d792c0c348f219",
+      "End": "90611c5da3f94252b66468c1e3fede79",
+      "Id": "a2e3ec634f484b11a6e0873b9d09859f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "36dc8d3645a04a8b93c81879051fc275",
+      "End": "9e359cbe65104795ad7cdf409a035a52",
+      "Id": "285fb4f224934d9d8caf2f671b8c946a",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "36dc8d3645a04a8b93c81879051fc275",
+      "End": "bc4eb9df98e148048270bf906f4e634b",
+      "Id": "3f93712a562b4bff8708a0995a14d7c6",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "36dc8d3645a04a8b93c81879051fc275",
+      "End": "1dda60ed13264fcab9408135c0cdb22a",
+      "Id": "8ce55f565db44d16958a10e814eda731",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "36dc8d3645a04a8b93c81879051fc275",
+      "End": "0f6a1df7730142fb919eb36e3cccf88b",
+      "Id": "c197476fef1d4bff9b64f2fa0a9adae4",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "36dc8d3645a04a8b93c81879051fc275",
+      "End": "f7c79c2938ca4655a0c0834cc66090ee",
+      "Id": "0d557ab6ca6d47e6be8e772c4c60324a",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "2e23a246d20b4e68a5dd14187891d510",
+      "End": "0348dd7d7a3d4f12a6a8ab2fb144e7aa",
+      "Id": "244d01ba7c3e403a93a166f620469fd9",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "128f6cf57bd34125bf7cad9ed62fbd77",
+      "End": "2f26cb96f57c471598b867fba40f06a1",
+      "Id": "d4f611c1937a4387bb1a7ae2dea821dc",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b1d4bba51d874370af5a7a9c0f9e946f",
+      "End": "2e0db4f877424d888f3c617503987d13",
+      "Id": "bdfe6e21277643ffa40e47decc165dd7",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "f610e2c3cfa24a02b96aedac2628f61b",
+      "End": "b341558e144448b79c92576254b886bc",
+      "Id": "dec67704680a472891b6b5520cae8a5e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a1df25b689f044ec83cf5e7234de2c4e",
+      "End": "f0f789f75f4f471db4dad1861550db01",
+      "Id": "74027de65e5541f1ac1f8db87e741a9e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "01222ecf83074745a18de4694770be5f",
+      "End": "1885f6c46dfc422a89a60afef73784c2",
+      "Id": "4fbafae2750d4d25a6eb11a79ad40ad4",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "904a4c0cff7c4a04a0506aa110bfaf47",
+      "End": "a96c433d086d4e19ba27fd8d73baf25e",
+      "Id": "319436ee779649e2a7128a5dfbe43963",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ff0220fff26a4fd6b6014ffaea302b80",
+      "End": "4806692a57444f4086081aed6b41c744",
+      "Id": "abbc17d0afb7409a82955db3dc851917",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "945a34f0533a4df88e69b6812f4aac4f",
+      "End": "55f3578521ba426dacc2a7163e602e32",
+      "Id": "ee1240078ad74b5e973f1854ca5fa1bf",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "945a34f0533a4df88e69b6812f4aac4f",
+      "End": "5865bcad41b14623baee2a5fd4ab4d9b",
+      "Id": "799f6db2f64b412aa0c6ba6c4970179b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9591f4c5d61b4285a2131ac08aa71cc4",
+      "End": "f8ba1a8eccc94ed09783abf1b7a5c7a8",
+      "Id": "52a44da6599d442aae12c762621e2de0",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9591f4c5d61b4285a2131ac08aa71cc4",
+      "End": "c465c6191b16434bba26d1e479591688",
+      "Id": "ca4b8af712254be8a18b399459df51e0",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "99d8536f8e604e54b9f0c401bdf98c72",
+      "End": "688af60bcb8f42a19801753ea0c67bb9",
+      "Id": "7c1e20bf177245a0962c4e6acf972ce7",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "cceda1e1136e49f79b45a9896493ad5e",
+      "End": "84654605fd5d472cadf6e6ef2e401236",
+      "Id": "b2fe2247568044ea9d0fc15a7699eb97",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "beb041b68c824229a9ac1c94f82c1ee9",
+      "End": "b0b033831c9a45ba97f94da1d3c01903",
+      "Id": "a0d3f8aeadd9480cb7b1c2e3f2342b96",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "67730bac0d224b8a80a76a9f07f77232",
+      "End": "ce022c2e6aca4559b8f3d320117054a0",
+      "Id": "d56536833c9e47179c54463f1e29ce6d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "c24d4dd71f304dfa8e0291ddae1b85ce",
+      "End": "8cd1e2cbab3c48b29d04cadd534e5c20",
+      "Id": "433902d56e5047468f3aaf3cae771f6b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5626bb86ebf749d5ab864c972ad8c096",
+      "End": "5807df86c932416baf5ca9e5879c029b",
+      "Id": "fddfd00ef761454bb296b995f9b9eff7",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5626bb86ebf749d5ab864c972ad8c096",
+      "End": "905420c54d5d495f8ddf21c10413db2a",
+      "Id": "2b31c0503f904a1fbe2adbb435a8134a",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "e7a8f40b45e84306960c19c93c8f5ce9",
+      "End": "3827f378375e43dc9c3a862d5734790c",
+      "Id": "7fc1ae77de1f42e9bfe39ef99b2b81fa",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "cc917b7016d94b719c0455aff548c98f",
+      "End": "60b1d7fa094347d688315743c31f8aa9",
+      "Id": "8edcd8ee31dd4053a9907885b5115370",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "c00b2adc84f245c78f7414d737a1afb9",
+      "End": "d247d45a7cee4d6b8fdff5a914f19d95",
+      "Id": "a16d4713201144d5b4c69e388860de09",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "fb71dae2892f447884b0e950f40161c2",
+      "End": "271baf6dd27047ee97968441557e7599",
+      "Id": "0238d1bff18a47039edead2cc02b4307",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1dc2c540db3547edbafb5bbee3d24c13",
+      "End": "e0a67dd4552f4dd6b4411cc79b175cf0",
+      "Id": "ec1849533b0a4dca85fa122bdd18a47e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1dc2c540db3547edbafb5bbee3d24c13",
+      "End": "7c9ab879c3f8482bbea659ab9d4024dd",
+      "Id": "c86c23aa4c414b2aa3f7dbce3b858e0d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1dc2c540db3547edbafb5bbee3d24c13",
+      "End": "1e7a5ef915424dfbadcca1efcc307263",
+      "Id": "65f0bc7699154ad4a35d81c2fe5eb510",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "67473206bd9948afbe00cbc7d13638b1",
+      "End": "ddd6b9f91fa94d9b8ebef7d88835ac73",
+      "Id": "edb87d35a357442881de95da97bc7d91",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ba408ead85834ebea6c0d95f26900998",
+      "End": "0bbdbb7dadda46a7b9cbcfab49697090",
+      "Id": "26b1c984f9e7413a82f7ffba020468c0",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5017f0e21ff8493196cc01b4a9877637",
+      "End": "f594cd427d5a4aeca5b08ca4af5be7f6",
+      "Id": "6244dbdfe64b45159ddab964afaf25cc",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "711a8525e99342d98082d4c316c1c75f",
+      "End": "9f6062bba2514a7da7ee64bd6dd2b0c2",
+      "Id": "aac011460ed84fe4934f6e3966256324",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "711a8525e99342d98082d4c316c1c75f",
+      "End": "36ee92bb57b84ba2a0f2f80c78b1bf96",
+      "Id": "d425c2b54e7246d481a2ef48535f8dab",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5bd8d2114ddf4ac4b05627a1bbfa2c58",
+      "End": "6288568277c04e82b939e4b1210cc563",
+      "Id": "c16667896edf4c5da230978e4316e965",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b268faff2bf74540a6a706863d76a121",
+      "End": "49a3dcffc5a94af489645632652fc919",
+      "Id": "98a7521e376b4870bc4ca5124e41d55a",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "458181d8e3bd442f856cc624af695a00",
+      "End": "f99513ee32fd4efe864de3a02bf8ec5b",
+      "Id": "de2c10ab9e6443b687edb8edaf70559f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3f667702290d4191a6704f840c1f4065",
+      "End": "f4a1354371084d4bae0b92c3ad6dc374",
+      "Id": "5784b9f063ba487aa892de88ec5de28c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3f667702290d4191a6704f840c1f4065",
+      "End": "1d0f8f36acee43c7860529bef9f2b8b4",
+      "Id": "779619acf68c43f2a25e7989bc577352",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3f667702290d4191a6704f840c1f4065",
+      "End": "9d60b9adef634318bc8901e0d7f7bd86",
+      "Id": "afc3841ad57b4544a62233803f83c692",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "2f0ca3a61b0845c784942ddf1fc22988",
+      "End": "6e30cbb2d728417e9d7096966ace5534",
+      "Id": "f6525d777a074c3fadbbcc9e87a82d75",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "47a62d31f95140ff8f03959e5eb8abfe",
+      "End": "33058c5b1d0e49eeb43e0f33c818a47a",
+      "Id": "f2260870361e476da907e50eeb6ddc4e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "847074315306437e9e0688538d331b23",
+      "End": "15bf8916bcbd44fea4e34e6f61911621",
+      "Id": "02c9aeb2a8384d98a55d3e66062f058e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9c8938fc25394f85aba2584bebce818e",
+      "End": "8207f90115c642ca9f690ba5567e6954",
+      "Id": "3f47b8822e614e248268fcc882017623",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "126f41f549b64e8c8b3c90066aafc640",
+      "End": "4edfd08dc8db494bb761a80628557187",
+      "Id": "ba61c3ab85c64beabfc8ce1df8b7a8f3",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6a44e5b2460b41a597eeecc257604f1d",
+      "End": "5dfdc81bcbf34c069e59151530543974",
+      "Id": "bae77dd102f24092b638538bc4820a78",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "21cfb10d656f4d24921b317c5351772d",
+      "End": "f54242fdbd584858a9b2b1267ace4cfe",
+      "Id": "664f03c4f7f848d7abaa102e3cd562ad",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "2434c4a75b94473899361b94424a2738",
+      "End": "0d9665b8e4584404b4ddc7a40ac3ff92",
+      "Id": "0414919cc9194341bb412452bf67d5ee",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "8c72e2e06b204085bc505def55162d2c",
+      "End": "7ba62d457ebf4953bfe544308784191f",
+      "Id": "dc7209af1fe046108290851362dbba31",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b58610a4dd5546428647c440dd364489",
+      "End": "30cfeb6addd94aa9857694e211c43f2f",
+      "Id": "574deb3bfe8646c7ba529de43be71499",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d66c15d9d453438a89405e13cca0728a",
+      "End": "8072e00c9fd24e9c91236bc1c55e507b",
+      "Id": "87dfc6fc3574420680dd7b206fa9bedd",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d48f95698a96459bb5ce6d36d548149d",
+      "End": "879cd40fde4d4ac1acf76b64aada2373",
+      "Id": "1112738b536045d0aa3de4446bd97179",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "27f561b1a6034489862c52b40506c5dc",
+      "End": "632ee838d2be4821b1994e1134147c78",
+      "Id": "e7e8e34239f54cf282e6c91d8db23093",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ca2bd48363d34d5e956de19e4abf5ec9",
+      "End": "12aea648646046368dc23f466b8551e1",
+      "Id": "56133c41e4c74d28a393d608ea672854",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ae38e24dd0ac4163b92c6f681fdc0887",
+      "End": "21f0546329784683a89ffdbec9f1602a",
+      "Id": "0500fe3bbe45465c8b0d144600df1556",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b8e1d2999a834ca29bb4577928cfd351",
+      "End": "540f52ca0ce04a4297f6b6cf779193ab",
+      "Id": "9fda37db8db44e2ba3ed6a79c438080a",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "98a7168860d141d69288bc9c981ed53b",
+      "End": "4e66a495f7d1448a802135e9415619b2",
+      "Id": "dbd7f81891614b298dc6f0a65297be1a",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.13",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "2.0",
+      "Data": {
+        "DefaultStudySettings": ""
+      }
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "Generative Design",
+    "activeLinterId": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.16.1.2727",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "배경 미리보기",
+      "EyeX": 167.62731088884175,
+      "EyeY": -412.97264469237416,
+      "EyeZ": 1751.517215821892,
+      "LookX": 328.161376953125,
+      "LookY": -42.605415344238281,
+      "LookZ": -1738.51123046875,
+      "UpX": -0.035392090678215027,
+      "UpY": 0.98162722587585449,
+      "UpZ": 0.18749795854091644
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "Point.ByCoordinates",
+        "ShowGeometry": true,
+        "Id": "3df619e87f8145359f1cb45fc6afd157",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -94.219807104643792,
+        "Y": 290.38800958775892
+      },
+      {
+        "Name": "Point.ByCoordinates",
+        "ShowGeometry": true,
+        "Id": "33a62b045ffc48e19186cc4bf29591f8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -98.014137738595082,
+        "Y": 543.54813558071532
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "209ccce3468240108ac3edc7f5a1b278",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -378.175950573416,
+        "Y": 604.06954927291008
+      },
+      {
+        "Name": "Line.ByStartPointEndPoint",
+        "ShowGeometry": true,
+        "Id": "af2653a2baf8491ead78fbda6746ff69",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 229.28527202944861,
+        "Y": 416.608799320559
+      },
+      {
+        "Name": "Curve.PointAtParameter",
+        "ShowGeometry": true,
+        "Id": "d28cf3103b204cdc9216fb1142a36512",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 516.56022286853636,
+        "Y": 489.85299723444882
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "782ec63833e446de8edf3bd3f76a792f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 252.68850264336106,
+        "Y": 653.35467620779457
+      },
+      {
+        "Name": "Geometry.Translate",
+        "ShowGeometry": true,
+        "Id": "18e2bb6328a74225b32133b71b52baf4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 872.59540539759041,
+        "Y": 752.01724356050647
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "a03f30ea5e7d473db6b685a19603e3b9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 167.14951546133193,
+        "Y": 1188.5560678814304
+      },
+      {
+        "Name": "List.OfRepeatedItem",
+        "ShowGeometry": true,
+        "Id": "2ef41ec2268c4c69a9025df82250c840",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 366.54680803566282,
+        "Y": 1309.1974388328135
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "d03e60247c2941a99a8ca0890462534a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 172.22037935668743,
+        "Y": 1461.4749181678749
+      },
+      {
+        "Name": "List.Shuffle",
+        "ShowGeometry": true,
+        "Id": "37c9a25d5ae349a6b81c1b9588bca133",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 954.417677845913,
+        "Y": 1320.1856793900142
+      },
+      {
+        "Name": "List.Flatten",
+        "ShowGeometry": true,
+        "Id": "447c3cae848c4ac38b21f75f04fc098c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 693.54680803566293,
+        "Y": 1309.1974388328135
+      },
+      {
+        "Name": "Integer Slider",
+        "ShowGeometry": true,
+        "Id": "b2d1808c0b23429eab0b933c2dda04d3",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -224.76388705033764,
+        "Y": 1182.005301855057
+      },
+      {
+        "Name": "Line.ByStartPointEndPoint",
+        "ShowGeometry": true,
+        "Id": "828118c4f738435c8dcfd22c5cdbe7cc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1605.3950818313047,
+        "Y": 823.0528130372702
+      },
+      {
+        "Name": "Line.ByStartPointEndPoint",
+        "ShowGeometry": true,
+        "Id": "9f90b4d4ce8d45ac943bc8cf2f12af4c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1605.3950818313047,
+        "Y": 464.99810106660721
+      },
+      {
+        "Name": "List.DropItems",
+        "ShowGeometry": true,
+        "Id": "b52d863ecab244e3b841150a4c29544d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1254.4674680449125,
+        "Y": 360.459610111315
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "761703922c9940b696428fbcf58d40d2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 971.59540539759041,
+        "Y": 384.20093240509834
+      },
+      {
+        "Name": "Line.ByStartPointEndPoint",
+        "ShowGeometry": true,
+        "Id": "8c9fe52c68054fea86bd324f8c889d74",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1605.3950818313047,
+        "Y": 295.30421718276625
+      },
+      {
+        "Name": "Line.ByStartPointEndPoint",
+        "ShowGeometry": true,
+        "Id": "3481fbb7af724c9dbbde095b08b279fd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1604.1081726247517,
+        "Y": 641.69708005026723
+      },
+      {
+        "Name": "List.DropItems",
+        "ShowGeometry": true,
+        "Id": "62dcc7d726cf41b2a03eafcce077cbdd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1254.4674680449125,
+        "Y": 565.67370786209585
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "b761675c72914a5b956dce0652588c7a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 971.59540539759041,
+        "Y": 599.007686809754
+      },
+      {
+        "Name": "List.DropItems",
+        "ShowGeometry": true,
+        "Id": "9536b7ece3e5409ea42831e10580d0b5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1254.4674680449125,
+        "Y": 744.21921302397232
+      },
+      {
+        "Name": "List Create",
+        "ShowGeometry": true,
+        "Id": "61930a0c93414305a94f57a0cc313c00",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1998.6912154372349,
+        "Y": 507.50366223532325
+      },
+      {
+        "Name": "List.Flatten",
+        "ShowGeometry": true,
+        "Id": "af09b385c44a43fe96442f9c33334fea",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2200.7392181665136,
+        "Y": 507.83273226742756
+      },
+      {
+        "Name": "Curve.StartPoint",
+        "ShowGeometry": true,
+        "Id": "871a75c9e3bc4df9ae2a9a04fee087b4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3073.5178529101768,
+        "Y": 285.38813799087546
+      },
+      {
+        "Name": "Curve.EndPoint",
+        "ShowGeometry": true,
+        "Id": "cbaddacc4c684db8835a1019ae5eb347",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3090.2934411827632,
+        "Y": 719.06816074143637
+      },
+      {
+        "Name": "List.Join",
+        "ShowGeometry": true,
+        "Id": "f2558d0d528444bda148b89520d9b8a6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3318.9885062587991,
+        "Y": 495.81178911889515
+      },
+      {
+        "Name": "List.UniqueItems",
+        "ShowGeometry": true,
+        "Id": "22b6b43fbdac447c8da3ae512a4ff788",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3968.5516669665785,
+        "Y": 97.349125232156041
+      },
+      {
+        "Name": "List.Clean",
+        "ShowGeometry": true,
+        "Id": "9c5b48c175ce41179866f23e6db9faa3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3676.2955440501228,
+        "Y": 322.35178166151337
+      },
+      {
+        "Name": "Boolean",
+        "ShowGeometry": true,
+        "Id": "800701b904e24487a17355526f8f15ea",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3671.7863277438178,
+        "Y": 195.06296600881541
+      },
+      {
+        "Name": "List.FilterByBoolMask",
+        "ShowGeometry": true,
+        "Id": "b2d9fca8b3b04374b7881c363fabc832",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5128.4933226559679,
+        "Y": 318.86930071506248
+      },
+      {
+        "Name": "Watch",
+        "ShowGeometry": true,
+        "Id": "db8b375f2def4320a14108b9ef7b659a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5413.3710033011957,
+        "Y": 316.51953891221314
+      },
+      {
+        "Name": "Sphere.ByCenterPointRadius",
+        "ShowGeometry": false,
+        "Id": "bea2381f27394bd9984d3826d9594ef7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4213.234567291669,
+        "Y": 73.353036330137058
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "82b75b3fdcdf47aa88cebd9b1298959d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4219.6140953998038,
+        "Y": -62.175988219200462
+      },
+      {
+        "Name": "BoundingBox.ByGeometry",
+        "ShowGeometry": true,
+        "Id": "753876559e2842f1a846cab396f81155",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4533.2480581474265,
+        "Y": 246.40211631628745
+      },
+      {
+        "Name": "BoundingBox.Contains",
+        "ShowGeometry": true,
+        "Id": "cbeb82bb8f844c2f8539c2f97b9052e0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4840.13530437187,
+        "Y": 395.97784414450189
+      },
+      {
+        "Name": "GeometryColor.ByGeometryColor",
+        "ShowGeometry": true,
+        "Id": "02ae8ef75ad7453ab448fe7a8e75cc22",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 7047.5423296225817,
+        "Y": 59.655411039370193
+      },
+      {
+        "Name": "List.Count",
+        "ShowGeometry": true,
+        "Id": "bc5f969252dd4d5093d66643d63102d3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6272.821278909154,
+        "Y": 502.09318091320966
+      },
+      {
+        "Name": "Dictionary.ByKeysValues",
+        "ShowGeometry": true,
+        "Id": "acfec99948964d65999de6d447e401df",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6746.5876161201513,
+        "Y": 842.66353030982157
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "fef7627341cc471691b9305b5e35a7ac",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6289.107357122045,
+        "Y": 845.780640690602
+      },
+      {
+        "Name": "Color Palette",
+        "ShowGeometry": true,
+        "Id": "1d0f28ffc6894ba38e2ab1386b5164f1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5816.9999534291719,
+        "Y": 455.20325419703533
+      },
+      {
+        "Name": "Color Palette",
+        "ShowGeometry": true,
+        "Id": "ecb743e6f3bd450ab7492976aab885f7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5817.1911498531654,
+        "Y": 573.72396235861493
+      },
+      {
+        "Name": "Color Palette",
+        "ShowGeometry": true,
+        "Id": "eaeeeb6ca38447eca3d6b72e70dfbdd6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5819.9353541022156,
+        "Y": 687.48184159718767
+      },
+      {
+        "Name": "Color Palette",
+        "ShowGeometry": true,
+        "Id": "548a6a917cbe47919d51ce52f698cf0d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5821.4470493667222,
+        "Y": 909.91382808331264
+      },
+      {
+        "Name": "Color Palette",
+        "ShowGeometry": true,
+        "Id": "1a924b21de404c89ab499f594d0366a5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5824.1912536157724,
+        "Y": 1023.6717073218847
+      },
+      {
+        "Name": "Color Palette",
+        "ShowGeometry": true,
+        "Id": "db939fd1c4d047b5b9de9bc2660196ef",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5821.2558529427324,
+        "Y": 791.3931199217327
+      },
+      {
+        "Name": "Color Palette",
+        "ShowGeometry": true,
+        "Id": "c5143a89eff14ba8a17d700879563494",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 5820.0667197055627,
+        "Y": 1132.9983413142168
+      },
+      {
+        "Name": "List.Join",
+        "ShowGeometry": true,
+        "Id": "efcaa2cc4e974fec8152de0994892826",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6082.5842845538773,
+        "Y": 924.29959926059064
+      },
+      {
+        "Name": "String from Object",
+        "ShowGeometry": true,
+        "Id": "7b9ffc743e2b4bb6b36977a430261df2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6474.3200907017354,
+        "Y": 835.0528790415832
+      },
+      {
+        "Name": "String from Object",
+        "ShowGeometry": true,
+        "Id": "2b7c4e3ad9684d61b33c2c2e1685fd82",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6491.5599571872553,
+        "Y": 499.33808556245356
+      },
+      {
+        "Name": "Dictionary.ValueAtKey",
+        "ShowGeometry": true,
+        "Id": "4b92efb420db45e69443a50b36e615a4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 7026.4341559158611,
+        "Y": 513.3432117491185
+      },
+      {
+        "Name": "List.Count",
+        "ShowGeometry": true,
+        "Id": "94246e4369e14b099e637164ae0f1ac6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6295.15460159265,
+        "Y": -271.39872939931973
+      },
+      {
+        "Name": "Math.Sum",
+        "ShowGeometry": true,
+        "Id": "27d1da9ec6d84934b3740635ef55c2fc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6250.7202910860669,
+        "Y": -89.032913361883885
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "5a71527e67f04517b124d2bfd70b7212",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6552.6413109167161,
+        "Y": -193.98357806715717
+      },
+      {
+        "Name": "점수",
+        "ShowGeometry": true,
+        "Id": "3249f731b6c94eba8358941a8f0fca83",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": true,
+        "Excluded": false,
+        "X": 6764.7695237844591,
+        "Y": -183.77087029045742
+      },
+      {
+        "Name": "Watch",
+        "ShowGeometry": true,
+        "Id": "6249ae0306fa4ac0893821c6bd972d21",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6718.9752153396848,
+        "Y": 503.84059833988351
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "a9997a45c9534a148f52d36582444139",
+        "Title": "Input",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "b2d1808c0b23429eab0b933c2dda04d3"
+        ],
+        "HasNestedGroups": false,
+        "Left": -234.76388705033764,
+        "Top": 1037.005301855057,
+        "Width": 368.0,
+        "Height": 277.0,
+        "FontSize": 96.0,
+        "InitialTop": 1182.005301855057,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 135.0,
+        "Background": "#FFFF7BAC"
+      },
+      {
+        "Id": "9ad57269cb9048f2a6033e9d46268f22",
+        "Title": "점수 Out put",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "94246e4369e14b099e637164ae0f1ac6",
+          "27d1da9ec6d84934b3740635ef55c2fc",
+          "5a71527e67f04517b124d2bfd70b7212",
+          "3249f731b6c94eba8358941a8f0fca83"
+        ],
+        "HasNestedGroups": false,
+        "Left": 6240.7202910860669,
+        "Top": -416.39872939931973,
+        "Width": 710.04923269839219,
+        "Height": 459.36581603743582,
+        "FontSize": 96.0,
+        "InitialTop": -271.39872939931973,
+        "InitialHeight": 327.36581603743582,
+        "TextblockHeight": 135.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "6ce5c015eee84dbe9c24966b9d8e2ffa",
+        "Title": "Dictionary 생성 및 추출",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "bc5f969252dd4d5093d66643d63102d3",
+          "acfec99948964d65999de6d447e401df",
+          "fef7627341cc471691b9305b5e35a7ac",
+          "7b9ffc743e2b4bb6b36977a430261df2",
+          "2b7c4e3ad9684d61b33c2c2e1685fd82",
+          "4b92efb420db45e69443a50b36e615a4",
+          "6249ae0306fa4ac0893821c6bd972d21"
+        ],
+        "HasNestedGroups": false,
+        "Left": 6262.821278909154,
+        "Top": 354.33808556245356,
+        "Width": 1011.6128770067071,
+        "Height": 650.325444747368,
+        "FontSize": 96.0,
+        "InitialTop": 499.33808556245356,
+        "InitialHeight": 491.44255512814846,
+        "TextblockHeight": 135.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "3cbe2722edc24ddc94fb76c9d35bc89e",
+        "Title": "Color",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "02ae8ef75ad7453ab448fe7a8e75cc22"
+        ],
+        "HasNestedGroups": false,
+        "Left": 7037.5423296225817,
+        "Top": -85.3445889606298,
+        "Width": 340.0,
+        "Height": 307.0,
+        "FontSize": 96.0,
+        "InitialTop": 59.655411039370193,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 135.0,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "d346c545417541c9bbb0febf12b834f1",
+        "Title": "하단 장변",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "3df619e87f8145359f1cb45fc6afd157",
+          "33a62b045ffc48e19186cc4bf29591f8",
+          "209ccce3468240108ac3edc7f5a1b278",
+          "af2653a2baf8491ead78fbda6746ff69",
+          "d28cf3103b204cdc9216fb1142a36512",
+          "782ec63833e446de8edf3bd3f76a792f"
+        ],
+        "HasNestedGroups": false,
+        "Left": -388.175950573416,
+        "Top": 145.38800958775892,
+        "Width": 1166.7361734419524,
+        "Height": 639.96666662003565,
+        "FontSize": 96.0,
+        "InitialTop": 290.38800958775892,
+        "InitialHeight": 507.96666662003565,
+        "TextblockHeight": 135.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ee0efbbaec5a44b69599454cdb4b5527",
+        "Title": "프레임 생성",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "18e2bb6328a74225b32133b71b52baf4",
+          "828118c4f738435c8dcfd22c5cdbe7cc",
+          "9f90b4d4ce8d45ac943bc8cf2f12af4c",
+          "b52d863ecab244e3b841150a4c29544d",
+          "761703922c9940b696428fbcf58d40d2",
+          "8c9fe52c68054fea86bd324f8c889d74",
+          "3481fbb7af724c9dbbde095b08b279fd",
+          "62dcc7d726cf41b2a03eafcce077cbdd",
+          "b761675c72914a5b956dce0652588c7a",
+          "9536b7ece3e5409ea42831e10580d0b5",
+          "61930a0c93414305a94f57a0cc313c00",
+          "af09b385c44a43fe96442f9c33334fea"
+        ],
+        "HasNestedGroups": false,
+        "Left": 862.59540539759041,
+        "Top": 150.30421718276625,
+        "Width": 1543.1438127689232,
+        "Height": 846.748595854504,
+        "FontSize": 96.0,
+        "InitialTop": 295.30421718276625,
+        "InitialHeight": 672.748595854504,
+        "TextblockHeight": 135.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "efdd13dfa1fa4f229e06e363cb4356fa",
+        "Title": "분절, 접합 점 추출",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "871a75c9e3bc4df9ae2a9a04fee087b4",
+          "cbaddacc4c684db8835a1019ae5eb347",
+          "f2558d0d528444bda148b89520d9b8a6",
+          "22b6b43fbdac447c8da3ae512a4ff788",
+          "9c5b48c175ce41179866f23e6db9faa3",
+          "800701b904e24487a17355526f8f15ea",
+          "b2d9fca8b3b04374b7881c363fabc832",
+          "db8b375f2def4320a14108b9ef7b659a",
+          "bea2381f27394bd9984d3826d9594ef7",
+          "82b75b3fdcdf47aa88cebd9b1298959d",
+          "753876559e2842f1a846cab396f81155",
+          "cbeb82bb8f844c2f8539c2f97b9052e0"
+        ],
+        "HasNestedGroups": false,
+        "Left": 3063.5178529101768,
+        "Top": -207.17598821920046,
+        "Width": 2636.853150391019,
+        "Height": 1070.2441489606367,
+        "FontSize": 96.0,
+        "InitialTop": -62.175988219200462,
+        "InitialHeight": 926.24414896063683,
+        "TextblockHeight": 135.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c2d160d5fe5644adafbdf1c724e56ab6",
+        "Title": "Z 값 Shuffle ",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "a03f30ea5e7d473db6b685a19603e3b9",
+          "2ef41ec2268c4c69a9025df82250c840",
+          "d03e60247c2941a99a8ca0890462534a",
+          "37c9a25d5ae349a6b81c1b9588bca133",
+          "447c3cae848c4ac38b21f75f04fc098c"
+        ],
+        "HasNestedGroups": false,
+        "Left": 157.14951546133193,
+        "Top": 1043.5560678814304,
+        "Width": 985.268162384581,
+        "Height": 549.91885028644447,
+        "FontSize": 96.0,
+        "InitialTop": 1188.5560678814304,
+        "InitialHeight": 417.91885028644447,
+        "TextblockHeight": 135.0,
+        "Background": "#FFBB87C6"
+      }
+    ],
+    "X": 320.06065596055748,
+    "Y": 511.2022273251572,
+    "Zoom": 0.15312620071415284
+  }
+}
